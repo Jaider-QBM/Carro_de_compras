@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/Style.css">
+    <title>Proyecto js</title>
+</head>
+<body>
+    <header>
+        <div class="title-logo">
+            <img src="assets/img/programacion-javascript-js-e1503258707880.jpg" alt="logo">
+            <h1>Jaider-QBM</h1>
+        </div>
+
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="">Inicio</a></li>
+                <li><a href="">Conocenos</a></li>
+                <li><a href=""></a></li>
+            </ul>
+        </nav>
+
+        <div class="carrito-icon" onclick="mostrarCarrito()">
+            <i class="fas fa-shopping-cart"></i> Mis Productos
+        </div>
+    </header>
+
+    <main>
+        <h1>Productos Disponibles</h1>
+
+        <div class="Card">
+            <div class="producto-card">
+                <img src="assets/img/producto1.webp" alt="Producto 1">
+                <h3>Zapatos Deportivos</h3>
+                <p>Precio: $50.0000</p>
+                <button class="agregar-producto" data-id="1" data-nombre="Zapatos Deportivos" data-precio="50000">
+                    Agregar al carrito <i class="fas fa-cart-plus"></i>
+                </button>
+            </div>
+            <div class="producto-card">
+                <img src="assets/img/producto2.webp" alt="Producto 2">
+                <h3>Zapatos Elegantes</h3>
+                <p>Precio: $40.000</p>
+                <button class="agregar-producto" data-id="2" data-nombre="Zapatos Elegantes" data-precio="40000">
+                    Agregar al carrito <i class="fas fa-cart-plus"></i>
+                </button>
+            </div>
+        </div>
+    
+        <div class="carrito-modal" id="carritoModal">
+            <div class="carrito-contenido">
+                <h2>Detalles de tus Compras</h2>
+                <ul id="lista-carrito">
+                </ul>
+                <p>Total: $<span id="total">0</span></p>
+                <button onclick="cerrarCarrito()" id="cerrar">Cerrar</button>
+            </div>
+        </div>
+    
+        <script type="Text/JavaScript" src="assets/js/Script.js"></script>
+    </main>
+</body>
+</html>
